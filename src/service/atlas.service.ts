@@ -1,5 +1,4 @@
 import axios from "axios"
-import qs from "qs"
 import { AtlasCreateAccountResponse } from "../index.d"
 
 export class AtlasService {

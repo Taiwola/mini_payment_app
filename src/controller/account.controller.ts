@@ -37,7 +37,7 @@ export const createAccount = async (req: Request, res: Response) => {
       amount: "100.00",
       email: user.email,
     })
-    console.log(atlasResponse)
+  
     const accountData = {
       userId,
       accountNo: atlasResponse.data.account_number,
@@ -95,7 +95,6 @@ export const transferFunds = async (req: Request, res: Response) => {
         trx
       )
 
-      console.log(transaction)
 
       await accountService.updateAccount(
         userAccount.id,
